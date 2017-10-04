@@ -4,9 +4,22 @@
 </head>
 <body>
     <?php
-        $myvar = "Cool new variable";
+        $name = "Jake";
 
-        echo $myvar;
+        echo "Hello, " . $name;
+
+        $loggedin  = true;
+
+        if ($loggedin == true) {
+            echo "You are logged in";
+        } else {
+            echo "Please log in";
+        }
     ?>
+
+    <form>
+        <input type="text">
+        <input type="submit">
+    </form>
 </body>
 </html>
