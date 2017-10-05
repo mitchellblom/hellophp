@@ -3,7 +3,7 @@
 <Title>Hi There, PHP!</Title>
 </head>
 <body>
-    <?php
+    <!-- <?php
         $name = "Jake";
 
         echo "Hello, " . $name;
@@ -15,11 +15,26 @@
         } else {
             echo "Please log in";
         }
+    ?> -->
+
+    <!-- <form action="process.php" method="post">
+        Enter your name:<input name="name" type="text">
+        <input type="submit">
+    </form> -->
+
+    <?php
+        $people = array("Alice", "Bob", "Cath");
+
+        $numbers = array(5, 3, 7);
+
+        // print_r($people);
+
+        echo $people[2];
+
+        foreach ($people as $person) {
+            echo $person . " ";
+        }
     ?>
 
-    <form>
-        <input type="text">
-        <input type="submit">
-    </form>
 </body>
 </html>
